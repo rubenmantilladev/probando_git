@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+  font-size: 5rem;
+  color: blueviolet;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 rem;
+  background: #ff1;
+
+  .logo {
+    width: 100px;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+
+    li {
+      list-style: none;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid #222;
+      }
+
+      a {
+        text-decoration: none;
+        color: #222;
+      }
+    }
+  }
+}
